@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+
+<h1>Home</h1>
+<p><%= homeContent %></p>
+<% postsArr.forEach((post) => { %>
+    <h1><%= post.title %></h1>
+    <div>
+        <p style="display: inline-block;"><%= post.content.substring(0, 100) %>...</p>
+        <a href="/posts/<%= post.title %>">Read More</a>
+    </div>
+<% }) %>
+
+<%- include("partials/footer"); -%>
