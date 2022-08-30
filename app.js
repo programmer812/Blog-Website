@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const url = process.env.MONGODB_AUTH;
+const url = process.env.MONGODB_AUTH.toString();
 mongoose.connect(url);
 
 const postSchema = {
