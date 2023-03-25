@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-anish:cIP9vXKH7BOqpNpo@cluster0.wgbmakd.mongodb.net/postsDB");
+mongoose.connect(process.env.MONGODB_AUTH);
 
 const postSchema = {
   title: String,
