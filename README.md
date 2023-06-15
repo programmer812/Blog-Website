@@ -1,8 +1,6 @@
 # Blog-Website
 
-My Blog Website: https://salty-garden-40377.herokuapp.com/
-
-Alternatively, if this website cannot be run, to run it locally:
+To run this application locally:
 
 1. npm install
 2. node app.js
